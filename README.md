@@ -1,6 +1,6 @@
 # Ristorante
 
-Servizio con entità Ristorante, Ricetta ed Ingrediente.
+Servizio con le entità Ristorante, Ricetta ed Ingrediente.
 
 ## Requisiti
 
@@ -29,7 +29,7 @@ Crea una nuova app all'interno del progetto
 python manage.py startapp core
 ```
 
-Crea i file necessari nella app core e dentro il progetto Django (copiare il contenuto dei folder ristoranteapi e core).
+Crea i file necessari nella app core e dentro il progetto Django (copiare il contenuto delle cartelle ristoranteapi e core).
 
 Esegui la migrazione al database 
 
@@ -47,10 +47,18 @@ python manage.py runserver
 
 ## Testing 
 
-Per testare le API, ho usato Postman. Ecco alcuni esempi.
+Per testare le API, ho usato Postman. Ecco un esempio.
 
-[<img alt="POST" src="https://drive.google.com/file/d/1L_-4s7e63cAKrcpOeI7y0W94HNi1F6tB/view?usp=sharing">]
+Per creare un nuovo ristorante:
 
-## Unitest
+Metodo: POST
+URL: http://localhost:8000/api/ristoranti/
+Body (raw JSON):
+```shell
+{
+    "nome": "Ristorante Italiano",
+    "indirizzo": "Via Roma, 1"
+}
+```
 
-The tests are contained in the **tests** folder.
+Per alcuni tests cases a maggior profondità. I test sono nella cartella **tests**.
