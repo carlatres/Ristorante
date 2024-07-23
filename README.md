@@ -1,6 +1,33 @@
 # Ristorante
 
-Servizio con le entità Ristorante, Ricetta ed Ingrediente.
+Using Django (Python), create a service with the following main entities:
+
+Restaurant
+Recipe
+Ingredient
+
+Each of these entities should have APIs for:
+
+Create
+Update
+Delete
+
+Additionally, there will be an API for listing:
+
+• Restaurants:
+    - all
+    - only those that cook a specified recipe
+
+• Recipes:
+    - all
+    - only those related to a specified restaurant
+    - only those that contain a specified ingredient
+
+• Ingredients:
+    - all
+    - only those related to a specified recipe
+    - only those used by a specified restaurant
+    
 
 ## Requisiti
 
